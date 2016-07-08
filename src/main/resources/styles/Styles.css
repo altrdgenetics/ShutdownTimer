@@ -1,0 +1,280 @@
+.root {
+    -fx-background-color: #252526;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+#Header {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Segoe UI Bold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #252526;
+    -fx-control-inner-background: #252526;
+    -fx-background-color: #252526;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 26;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view .column .label {
+    -fx-font-size: 9pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view .table-cell{
+    -fx-font-size: 9pt;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #252526 transparent #252526;
+    -fx-background-color: transparent, derive(#252526,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#252526,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#252526,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.text-field {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+/* 
+    Document   : JMetroDarkTheme
+    Created on : Oct 23, 2012, 7:12:32 PM
+    Author     : Pedro Duque Vieira
+    Description:
+        Dark Metro style sheet for use in JavaFX applications
+*/
+
+/*******************************************************************************
+ *                                                                             *
+ * Push Button                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+ 
+    -fx-background-radius: 0;
+ 
+    -fx-background-color: #252526;
+   
+     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+#closeButton {
+    -fx-padding: 5 5 5 5;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 0;
+ 
+    -fx-background-radius: 0;
+ 
+    -fx-background-color: #252526;
+   
+     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+.button:hover{
+    -fx-background-color: #3a3a3a;
+}
+
+#closeButton:hover{
+    -fx-background-color: #e81123;
+}
+
+.button:pressed, .button:default:hover:pressed
+{
+  -fx-background-color: white;
+  -fx-text-fill: #252526;
+}
+ 
+.button:focused
+{
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+ 
+.button:disabled, .button:default:disabled
+{
+    -fx-opacity: 0.4;
+    -fx-background-color: #252526;
+    -fx-text-fill: white;
+}
+ 
+.button:default
+{
+    -fx-background-color: #008287;
+    -fx-text-fill: #ffffff;
+}
+ 
+.button:default:hover{
+    -fx-background-color: #219297;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ProgressBar                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+.progress-bar > .bar {
+    -fx-background-color: #0097fb;
+    -fx-background-radius: 0;
+    -fx-background-insets: 1;
+
+}
+
+.progress-bar > .track {
+    -fx-background-color: #204d6d;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * TextBox (and PasswordBox)                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-field{
+    /*-fx-skin: "jmetro8.MetroTextFieldSkin";*/
+    -fx-font-size: 30pt;
+}
+
+.text-input{
+    -fx-background-radius: 0, 0;
+
+    -fx-background-color: #d2d2d2;
+    -fx-background-insets: 0;
+
+    -fx-prompt-text-fill: #818181;
+
+    -fx-highlight-fill: #008287; /* TODO: this probably is the "active" color" */
+    -fx-highlight-text-fill: white;
+}
+
+.text-input:hover{
+    -fx-background-color: #e2e2e2;
+}
+
+.text-input:focused{
+    -fx-background-color: #5c5c5c, white;
+
+    -fx-text-fill: black;
+}
+
+/*.text-input > Pane{*/
+/*-fx-padding: 0.333333em 0.583em 0.333333em 0em; *//* 4 7 4 0 */
+/*}*/
+
+.text-input > .right-button{
+    -fx-cursor: default;
+
+    -fx-background-insets: -0.1666665em -0.45em -0.1666665em -0.45em; /* 4 7 4 7 -> this values are subtracted by 2px in em because of the border of the textfield */
+}
+
+.text-field > .right-button > .right-button-graphic {
+    -fx-shape            : "M221.738,305.873l6.135,6.16l-2.875,2.863l-6.135-6.159l-6.263,6.237l-2.864-2.875l6.263-6.238l-6.177-6.202l2.875-2.863l6.177,6.201l6.244-6.22l2.864,2.876L221.738,305.873z";
+
+    -fx-padding: 0.5em 0.5em; /* TODO: put the real number here 18 18 */
+    -fx-background-color: black;
+}
+
+.text-input > .right-button:hover {
+    -fx-background-color: #dedede;
+}
+
+.text-input > .right-button:pressed {
+    -fx-background-color: black;
+}
+
+.text-input > .right-button:pressed > .right-button-graphic {
+    -fx-background-color: white;
+}
+
+.text-input:disabled
+{
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 2;
+    -fx-background-color: #777777, #1d1d1d;
+    -fx-text-fill: #616161;
+}
+
+.item-title.disabled{
+    -fx-text-fill: #939393;
+}
